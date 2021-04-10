@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2689ac57fe1d7c04aae31bd5cbe42c64, type: 3}
+  m_Name: Shape Settings
+  m_EditorClassIdentifier: 
+  planetRadius: 10000
+  nbVertices: 200
+  shapeNoiseLayers:
+  - enabled: 1
+    noiseSettings:
+      scale: 0.001
+      octaves: 4
+      baseRoughness: 1
+      roughness: 2
+      persistence: 0.3
+      centre: {x: 0, y: 0, z: 0}
+  - enabled: 1
+    noiseSettings:
+      scale: 1e-17
+      octaves: 3
+      baseRoughness: 3
+      roughness: 2
+      persistence: 0.5
+      centre: {x: 0, y: 0, z: 0}
+  - enabled: 1
+    noiseSettings:
+      scale: 0.00000001
+      octaves: 6
+      baseRoughness: 5
+      roughness: 2
+      persistence: 0.5
+      centre: {x: 0, y: 0, z: 0}
+  - enabled: 1
+    noiseSettings:
+      scale: 0.000000001
+      octaves: 7
+      baseRoughness: 10
+      roughness: 5
+      persistence: 5
+      centre: {x: 0, y: 0, z: 0}
+  - enabled: 1
+    noiseSettings:
+      scale: 1e-10
+      octaves: 8
+      baseRoughness: 10
+      roughness: 5
+      persistence: 5
+      centre: {x: 0, y: 0, z: 0}

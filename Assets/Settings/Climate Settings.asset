@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2edd9ea64361ef4d9364a443ac1f7b6, type: 3}
+  m_Name: Climate Settings
+  m_EditorClassIdentifier: 
+  planetMaterial: {fileID: 2100000, guid: dfd6958864ca5464ab7ddc2cfdd8578d, type: 2}
+  oceanElevation: 0.3
+  polesLatitude: 0.02
+  adjustBiomesWithOcean: 1
+  equatorTemperature: 50
+  polesTemperature: -50
+  temperatureDistribution:
+    polar: 0.1
+    subPolar: 0.1
+    boreal: 0.2
+    coolTemperate: 0.2
+    warmTemperate: 0.2
+    subTropical: 0.1
+    tropical: 0.1
+  moistureDistribution:
+    superHumid: 0.1
+    perHumid: 0.1
+    humid: 0.1
+    subHumid: 0.1
+    semiArid: 0.2
+    arid: 0.1
+    perArid: 0.1
+    superArid: 0.2
+  moistureNoiseLayers:
+  - enabled: 1
+    noiseSettings:
+      scale: 0.01
+      octaves: 2
+      baseRoughness: 3
+      roughness: 2
+      persistence: 0.5
+      centre: {x: 0, y: 0, z: 0}
+  - enabled: 1
+    noiseSettings:
+      scale: 0.00001
+      octaves: 4
+      baseRoughness: 3
+      roughness: 2
+      persistence: 1
+      centre: {x: 0, y: 0, z: 0}
+  - enabled: 1
+    noiseSettings:
+      scale: 0.00001
+      octaves: 6
+      baseRoughness: 3
+      roughness: 2
+      persistence: 2
+      centre: {x: 0, y: 0, z: 0}
